@@ -37,7 +37,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'alx_backend_graphql_crm.crm'
+    'alx_backend_graphql_crm.crm',
+    'crm',
+    'graphene-django',
 ]
 
 MIDDLEWARE = [
