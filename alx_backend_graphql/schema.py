@@ -1,6 +1,7 @@
 import graphene
 from graphene_django import DjangoObjectType
-from alx-backend-graphql_crm.crm.models import Category, crm
+from alx-backend-graphql.crm.models import Category, crm
+from crm.schema import Query
 
 class CategoryType(DjangoObjectType):
     class Meta:
