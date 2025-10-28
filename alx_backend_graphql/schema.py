@@ -7,7 +7,7 @@ class CategoryType(DjangoObjectType):
         model = Category
         fields = ("id", "name", "email")
 
-class Query(graphene.ObjectType):
+class Query(CRMQuery, graphene.ObjectType):
     all_customers = graphene.List(CustomerType)
 
     def resolve_all_customers(root, info):
