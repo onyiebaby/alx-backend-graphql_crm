@@ -1,5 +1,5 @@
 import graphene
-from models import Customer
+from .models import Customer
 
 class Meta:
     model = Customer
@@ -7,4 +7,7 @@ class Meta:
 
 class Query(graphene.ObjectType):
     all_customers = graphene.List(CustomerType)
+ 
+class CRMQuery():
+    hello = graphene.String(default_value='Hello, GraphQL!')
 

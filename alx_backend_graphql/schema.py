@@ -1,17 +1,8 @@
 import graphene
-from graphene_django import DjangoObjectType
-from alx-backend-graphql.crm.models import Category, crm
-from crm.schema import Query
-
-class CategoryType(DjangoObjectType):
-    class Meta:
-        model = Category
-        fields = ("id", "name", "email")
+from crm.schema import CRMQuery
 
 class Query(CRMQuery, graphene.ObjectType):
-    all_customers = graphene.List(CustomerType)
+    hello = graphene.String(default_value='Hello,GraphQL!')
 
-    def resolve_all_customers(root, info):
-        return Customer.objects.all()
     
 schema = graphene.Schema(query=Query)    
