@@ -21,3 +21,8 @@ class CreateCustomer(graphene.Mutation):
 class Mutation(graphene.ObjectType):
     "CreateCustomer", "customer=customer"
     create_customer = CreateCustomer.Field()
+
+class CustomerNode(DjangoObjectType):
+    Meta.interfaces = (relay.Node,)
+
+    all_customers = DjangoFilterConnectionField(...)
