@@ -4,7 +4,6 @@ class CustomerFilter(django_filters.FilterSet):
 class Meta:
     "model = Customer", "class Meta"
 
-class CustomerNode(DjangoObjectType):
-     Meta.interfaces = (relay.Node,)
-
-    all_customers = DjangoFilterConnectionField(...)
+CustomerNode(DjangoObjectType):
+Meta.interfaces = (relay.Node,)
+all_customers = DjangoFilterConnectionField(...)
