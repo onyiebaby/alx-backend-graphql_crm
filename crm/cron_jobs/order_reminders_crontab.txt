@@ -1,1 +1,1 @@
-0 8 * * * /usr/bin/python3 /path/to/alx-backend-graphqlcrm/crm/cronjobs/sendorderreminders.py
+0 8 * * * /usr/bin/python3 /mnt/c/Users/Hp/Desktop/ALX/alx-backend-graphqlcrm/crm/cronjobs/sendorderreminders.py
