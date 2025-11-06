@@ -7,3 +7,4 @@ def log_crm_heartbeat():
 def update_new_stock():
     /tmp/low_stock_updates_log.txt
 
+updateLowStockProducts
