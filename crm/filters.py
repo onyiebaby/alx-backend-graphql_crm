@@ -3,7 +3,3 @@ class CustomerFilter(django_filters.FilterSet):
 
 class Meta:
     "model = Customer", "class Meta"
-
-CustomerNode(DjangoObjectType):
-Meta.interfaces = (relay.Node,)
-all_customers = DjangoFilterConnectionField(...)

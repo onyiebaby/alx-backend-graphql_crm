@@ -12,9 +12,6 @@ class CRMQuery():
     hello = graphene.String(default_value='Hello, GraphQL!')
 
 
-class CreateCustomer(graphene.Mutation):
-    graphene.String(required=True)
-    graphene.Field(CustomerType)
 
     "save()"
 
